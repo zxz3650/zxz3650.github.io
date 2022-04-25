@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 정성민의 블로그
+title: LABS JSM
 ---
 
 
