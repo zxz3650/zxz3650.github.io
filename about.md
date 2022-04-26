@@ -11,4 +11,4 @@ permalink: /about/
 
 * Blog: [blog.zxz3650.xyz](blog.zxz3650.xyz)
 
-* E-MAIL: (mailto:zxz3650@gmail.com)
+* E-MAIL: (mailto:zxz365079@gmail.com), (mailto:zxz3650@naver.com)
