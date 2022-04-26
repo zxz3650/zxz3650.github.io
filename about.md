@@ -3,13 +3,11 @@ layout: page
 title: About
 permalink: /about/
 ---
+### About
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+보안 및 IT 정보를 연구하는 공간입니다.
 
 ### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[github.com/zxz3650]
+[blog.zxz3650.xyz]
+[zxz365079@gmail.com](mailto:zxz3650@gmail.com)
