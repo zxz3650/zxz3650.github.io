@@ -1,9 +1,7 @@
 ---
 layout: page
-title: About
 permalink: /about/
 ---
-### Hello World
 보안 및 IT 정보를 연구하는 공간입니다.
 
 ### Contact me
