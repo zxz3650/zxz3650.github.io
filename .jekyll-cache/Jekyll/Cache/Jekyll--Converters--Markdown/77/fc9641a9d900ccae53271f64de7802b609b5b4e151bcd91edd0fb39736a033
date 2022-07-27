@@ -1,0 +1,27 @@
+I"¢<h2 id="introduction-to-soc">Introduction to SOC</h2>
+<ul>
+  <li>The structure of a SOC</li>
+  <li>The operation of a SOC</li>
+  <li>SOC Tools/Products</li>
+  <li>How a SOC Analyst should use his tools</li>
+  <li>Frequent mistakes that SOC Analysts make</li>
+  <li>
+    <h2 id="what-is-a-soc">What is a SOC?</h2>
+    <p>A Security Operation Center (SOC) is the facility where the information security team constantly monitors and analyzes the security of an organization. The main purpose of the SOC team is to detect, analyze and respond to cyber security incidents by using technology, people and processes.</p>
+  </li>
+</ul>
+
+<h2 id="types-of-soc-models">Types Of SOC Models</h2>
+
+<h3 id="in-house-soc">In-house SOC</h3>
+<p>The enterprise builds its own cybersecurity team. Firms considering establishing an internal SOC should have a budget to support continuity.</p>
+
+<h3 id="virtual-soc">Virtual SOC</h3>
+<p>The security team does not have its own facility and often works remotely in different locations.</p>
+
+<h3 id="co-managed-soc">Co-Managed SOC</h3>
+<p>The Co-Managed SOC consists of internal SOC personnel working with an external Managed Security Service Provider (MSSP). The coordination is really important for this type of model.</p>
+
+<h3 id="command-soc">Command SOC</h3>
+<p>A senior group that oversees smaller SOCs in a large region. Organizations using this model include major telecom providers and defense agencies.</p>
+:ET
