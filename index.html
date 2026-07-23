@@ -2,12 +2,55 @@
 layout: default
 ---
 
-<ul>
+<section class="hero">
+  <div class="hero-copy">
+    <span class="eyebrow"><i></i> INDEPENDENT CSIRT RESEARCH</span>
+    <h1>Observe.<br><em>Analyze.</em> Respond.</h1>
+    <p>위협 인텔리전스, 취약점 분석, 사고 대응 기록을 운영 관점에서 정리합니다. 빠르게 이해하고 바로 대응할 수 있는 보안 지식을 지향합니다.</p>
+    <div class="hero-actions">
+      <a class="button primary" href="#latest">Latest intelligence</a>
+      <a class="button secondary" href="{{ '/archive' | relative_url }}">Browse archive</a>
+    </div>
+  </div>
+  <div class="radar-card" aria-hidden="true">
+    <div class="radar-head"><span>LIVE SIGNAL</span><b>ACTIVE</b></div>
+    <div class="radar">
+      <span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span>
+      <span class="sweep"></span><span class="blip b1"></span><span class="blip b2"></span><span class="blip b3"></span>
+    </div>
+    <div class="radar-foot"><span>35.1790° N</span><span>129.0756° E</span></div>
+  </div>
+</section>
+
+<section class="metrics" aria-label="Knowledge base metrics">
+  <div><span>REPORTS</span><strong>{{ site.posts | size }}</strong></div>
+  <div><span>FOCUS</span><strong>DFIR</strong></div>
+  <div><span>COVERAGE</span><strong>CTI · SOC</strong></div>
+  <div><span>CLASSIFICATION</span><strong>TLP:CLEAR</strong></div>
+</section>
+
+<section id="latest" class="latest-section">
+  <div class="section-title">
+    <div><span class="eyebrow">LATEST REPORTS</span><h2>Threat intelligence</h2></div>
+    <a href="{{ '/archive' | relative_url }}">View all reports →</a>
+  </div>
+
+  <div class="report-grid">
     {% for post in paginator.posts %}
-      <li>
-          <h2><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h2>
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
-          <p>{{ post.content | strip_html | truncatewords:50 }}</p>
-      </li>
+    <article class="report-card{% if forloop.first %} featured{% endif %}">
+      <div class="card-top">
+        <span>{{ post.date | date: "%Y.%m.%d" }}</span>
+        <span class="severity">{% if post.tags contains 'rce' or post.tags contains 'malware' %}HIGH{% else %}ANALYSIS{% endif %}</span>
+      </div>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p>{{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
+      <div class="card-bottom">
+        <div class="tag-list">
+          {% for tag in post.tags limit:3 %}<span>#{{ tag }}</span>{% endfor %}
+        </div>
+        <a class="card-arrow" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title }}">↗</a>
+      </div>
+    </article>
     {% endfor %}
-</ul>
+  </div>
+</section>

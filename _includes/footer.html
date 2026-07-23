@@ -1,9 +1,12 @@
-<footer>
-  <a href="https://creativecommons.org/licenses/by-nc/3.0/deed.en_US">
-    <span>
-        <b>{{ site.owner}}</b>
-    </span>
-    {% capture currentyear %}{{ 'now' | date: "%Y" }}{% endcapture %}
-    <span>© {{ currentyear }}</span>
-  </a>
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div>
+      <a class="footer-brand" href="{{ '/' | relative_url }}">HXDKOR / CSIRT</a>
+      <p>Independent security research, incident response notes, and actionable threat intelligence.</p>
+    </div>
+    <div class="footer-meta">
+      <span>PUBLIC TLP:CLEAR</span>
+      <span>© {{ 'now' | date: '%Y' }} {{ site.owner }}</span>
+    </div>
+  </div>
 </footer>

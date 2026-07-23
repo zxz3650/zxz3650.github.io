@@ -2,8 +2,39 @@
 layout: default
 ---
 
-<article>
-  <h2>{{ page.title }}</h2>
-  <time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time>
-  {{ content }}
+<article class="post-detail">
+  <header class="post-hero">
+    <div class="eyebrow">
+      <span>INTELLIGENCE REPORT</span>
+      <span class="tlp">TLP:CLEAR</span>
+    </div>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="post-deck">{{ page.description }}</p>{% endif %}
+    <div class="post-meta">
+      <span><b>Published</b> {{ page.date | date: "%Y.%m.%d" }}</span>
+      <span><b>Author</b> {{ site.author.name }}</span>
+      <span><b>Reading</b> {% assign words = content | number_of_words %}{{ words | divided_by: 180 | plus: 1 }} min</span>
+    </div>
+    {% if page.tags %}
+    <div class="tag-list" aria-label="Tags">
+      {% for tag in page.tags %}<span>#{{ tag }}</span>{% endfor %}
+    </div>
+    {% endif %}
+  </header>
+
+  <div class="report-frame">
+    <aside class="report-rail" aria-label="Report information">
+      <span>REPORT</span>
+      <strong>{{ page.date | date: "%Y%m%d" }}</strong>
+      <i></i>
+      <span>STATUS</span>
+      <strong>RELEASED</strong>
+    </aside>
+    <div class="prose">{{ content }}</div>
+  </div>
+
+  <footer class="post-end">
+    <span>END OF REPORT</span>
+    <a href="{{ '/archive' | relative_url }}">View intelligence archive →</a>
+  </footer>
 </article>

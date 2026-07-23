@@ -1,38 +1,25 @@
 ---
 layout: page
-title: Archive
+title: Intelligence Archive
 ---
 
-<section>
-  {% if site.posts[0] %}
+<p class="page-intro">Published research, incident-response notes, and technical intelligence in reverse chronological order.</p>
 
-    {% capture currentyear %}{{ 'now' | date: "%Y" }}{% endcapture %}
-    {% capture firstpostyear %}{{ site.posts[0].date | date: '%Y' }}{% endcapture %}
-    {% if currentyear == firstpostyear %}
-        <h3>This year's posts</h3>
-    {% else %}  
-        <h3>{{ firstpostyear }}</h3>
+<div class="archive-list">
+  {% assign current_year = '' %}
+  {% for post in site.posts %}
+    {% assign post_year = post.date | date: '%Y' %}
+    {% if post_year != current_year %}
+      {% unless forloop.first %}</div>{% endunless %}
+      <div class="archive-year"><h2>{{ post_year }}</h2>
+      {% assign current_year = post_year %}
     {% endif %}
-
-    {%for post in site.posts %}
-      {% unless post.next %}
-        <ul>
-      {% else %}
-        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-        {% if year != nyear %}
-          </ul>
-          <h3>{{ post.date | date: '%Y' }}</h3>
-          <ul>
-        {% endif %}
-      {% endunless %}
-        <li><time>{{ post.date | date:"%d %b" }} - </time>
-          <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-            {{ post.title }}
-          </a>
-        </li>
-    {% endfor %}
-    </ul>
-
-  {% endif %}
-</section>
+      <article>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m.%d" }}</time>
+        <div><h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% if post.tags %}<p>{{ post.tags | join: ' · ' }}</p>{% endif %}</div>
+        <a href="{{ post.url | relative_url }}" aria-label="Read {{ post.title }}">↗</a>
+      </article>
+    {% if forloop.last %}</div>{% endif %}
+  {% endfor %}
+</div>
