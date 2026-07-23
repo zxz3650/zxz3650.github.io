@@ -1,5 +1,5 @@
-title: HXDKOR CSIRT
-description: "Cyber threat intelligence, incident response, and security research"
+title: HxdKor-Blog
+description: "Hacker Lab"
 author:
   name: "SeongminJeong"
   email: "zxz365079@gmail.com"
@@ -28,5 +28,5 @@ plugins:
   - jekyll-sitemap
 
 # Custom variables
-owner : "Seongmin Jeong"
-year : "2026"
+owner : "Seongmin-Jeong"
+year : "2024"

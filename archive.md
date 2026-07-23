@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Intelligence Archive
+title: Archive
 ---
 
 <p class="page-intro">Published research, incident-response notes, and technical intelligence in reverse chronological order.</p>
