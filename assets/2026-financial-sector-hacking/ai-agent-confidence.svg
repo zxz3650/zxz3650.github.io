@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="720" viewBox="0 0 1500 720">
+<style>
+text{font-family:Arial,"Noto Sans KR",sans-serif;fill:#17202a}.t{font-size:36px;font-weight:700}.h{font-size:23px;font-weight:700}.s{font-size:18px}.yes{fill:#e8f8f5;stroke:#148f77;stroke-width:3}.maybe{fill:#fef9e7;stroke:#b7950b;stroke-width:3}.no{fill:#fdedec;stroke:#c0392b;stroke-width:3}.mid{fill:#f4f6f7;stroke:#5d6d7e;stroke-width:2}.arr{stroke:#566573;stroke-width:4;marker-end:url(#m)}
+</style><defs><marker id="m" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#566573"/></marker></defs>
+<text x="50" y="60" class="t">ARTEX / AI Agent 관련 증거 수준</text>
+<rect x="60" y="125" width="400" height="190" rx="16" class="yes"/>
+<text x="95" y="170" class="h">확인됨</text>
+<text x="95" y="210" class="s">• 공격 관련 서버에서 ARTEX 문자열 정황</text>
+<text x="95" y="245" class="s">• ARTEX는 공개된 자율 침투테스트 프로젝트</text>
+<text x="95" y="280" class="s">• 복수 금융사에 자동화된 반복 공격 정황</text>
+<rect x="550" y="125" width="400" height="190" rx="16" class="maybe"/>
+<text x="585" y="170" class="h">합리적 추정</text>
+<text x="585" y="210" class="s">• AI Agent가 정찰/테스트를 가속했을 가능성</text>
+<text x="585" y="245" class="s">• 취약 경로를 병렬 탐색했을 가능성</text>
+<text x="585" y="280" class="s">• IP 변경·재시도 자동화 가능성</text>
+<rect x="1040" y="125" width="400" height="190" rx="16" class="no"/>
+<text x="1075" y="170" class="h">미확인 / 단정 금지</text>
+<text x="1075" y="210" class="s">• ARTEX가 실제 공격을 수행했다</text>
+<text x="1075" y="245" class="s">• 특정 국가/조직이 배후다</text>
+<text x="1075" y="280" class="s">• 모든 금융사 사고가 동일 공격자다</text>
+<rect x="210" y="430" width="1080" height="160" rx="16" class="mid"/>
+<text x="260" y="475" class="h">분석 시 핵심</text>
+<text x="260" y="515" class="s">AI는 새로운 취약점을 '만든' 것이 아니라, 이미 존재하던 공격면을 더 빠르고 넓게 탐색·재시도할 수 있게 하는 자동화 계층으로 보는 편이 타당하다.</text>
+<text x="260" y="555" class="s">Attribution과 Tool attribution은 별개의 문제이며, 공개 증거 수준에 맞춰 표현해야 한다.</text>
+</svg>
