@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="620" viewBox="0 0 1600 620">
+<style>
+text{font-family:Arial,"Noto Sans KR",sans-serif;fill:#17202a}.t{font-size:36px;font-weight:700}.h{font-size:22px;font-weight:700}.s{font-size:17px}.a{fill:#eaf2f8;stroke:#2874a6;stroke-width:2}.b{fill:#fef5e7;stroke:#ca6f1e;stroke-width:2}.c{fill:#f5eef8;stroke:#7d3c98;stroke-width:2}.arr{stroke:#566573;stroke-width:4;marker-end:url(#m)}
+</style><defs><marker id="m" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#566573"/></marker></defs>
+<text x="50" y="62" class="t">공개 정보로 재구성한 공격 Kill Chain</text>
+<g transform="translate(50,140)"><rect width="220" height="180" rx="16" class="a"/><text x="35" y="45" class="h">1. Recon</text><text x="25" y="85" class="s">인터넷 노출 자산 탐색</text><text x="25" y="115" class="s">주변 업무시스템 식별</text><text x="25" y="145" class="s">서비스/파라미터 분석</text></g>
+<line x1="270" y1="230" x2="330" y2="230" class="arr"/>
+<g transform="translate(340,140)"><rect width="250" height="180" rx="16" class="b"/><text x="35" y="45" class="h">2. Weakness Test</text><text x="25" y="85" class="s">인증·인가·세션 검증</text><text x="25" y="115" class="s">단말기 접근통제</text><text x="25" y="145" class="s">알려진 웹 취약점</text></g>
+<line x1="590" y1="230" x2="650" y2="230" class="arr"/>
+<g transform="translate(660,140)"><rect width="250" height="180" rx="16" class="c"/><text x="35" y="45" class="h">3. Exploit / Bypass</text><text x="25" y="85" class="s">본인확인 우회</text><text x="25" y="115" class="s">BOLA/IDOR 유사 행위</text><text x="25" y="145" class="s">세션 검증 미흡 악용</text></g>
+<line x1="910" y1="230" x2="970" y2="230" class="arr"/>
+<g transform="translate(980,140)"><rect width="250" height="180" rx="16" class="b"/><text x="35" y="45" class="h">4. Enumeration</text><text x="25" y="85" class="s">객체/고객 식별값 변경</text><text x="25" y="115" class="s">반복 요청·정상 응답 식별</text><text x="25" y="145" class="s">관련 조회기능 연쇄 호출</text></g>
+<line x1="1230" y1="230" x2="1290" y2="230" class="arr"/>
+<g transform="translate(1300,140)"><rect width="250" height="180" rx="16" class="a"/><text x="35" y="45" class="h">5. Collection</text><text x="25" y="85" class="s">PII·대출정보 수집</text><text x="25" y="115" class="s">IP 변경·재시도</text><text x="25" y="145" class="s">유출 / 추가 공격</text></g>
+<text x="55" y="400" class="h">Detection 중심으로 보면</text>
+<text x="55" y="445" class="s">단일 IOC(IP)보다 URI + 파라미터 변화 + 세션/IP 관계 + 응답코드 분포 + 객체 조회량을 연계해야 한다.</text>
+<text x="55" y="485" class="s">공개자료로 확정되지 않은 단계(정확한 exploit payload, C2, exfil 프로토콜)는 이 도식에서 의도적으로 제외했다.</text>
+</svg>
