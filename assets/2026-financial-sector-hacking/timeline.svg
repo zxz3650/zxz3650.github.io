@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760">
+<style>
+text{font-family:Arial,"Noto Sans KR",sans-serif;fill:#17202a}.t{font-size:38px;font-weight:700}.d{font-size:25px;font-weight:700}.s{font-size:18px}.line{stroke:#5d6d7e;stroke-width:5}.dot{fill:#2874a6}.warn{fill:#ca6f1e}.info{fill:#7d3c98}.card{fill:#f8f9f9;stroke:#ccd1d1;stroke-width:2}
+</style>
+<text x="50" y="65" class="t">공개 보도 기반 주요 타임라인</text>
+<line x1="110" y1="380" x2="1490" y2="380" class="line"/>
+<g><circle cx="180" cy="380" r="13" class="dot"/><rect x="80" y="125" rx="12" width="250" height="190" class="card"/><text x="105" y="165" class="d">9/27</text><text x="105" y="205" class="s">KB국민은행</text><text x="105" y="235" class="s">RM/PB 업무지원 공격</text><text x="105" y="265" class="s">장시간 반복 접근</text><line x1="180" y1="315" x2="180" y2="365" class="line"/></g>
+<g><circle cx="460" cy="380" r="13" class="dot"/><rect x="345" y="430" rx="12" width="270" height="185" class="card"/><text x="375" y="470" class="d">9/28~30</text><text x="375" y="510" class="s">신한은행</text><text x="375" y="540" class="s">대출모집인 서비스</text><text x="375" y="570" class="s">본인확인 우회·반복 조회</text><line x1="460" y1="395" x2="460" y2="430" class="line"/></g>
+<g><circle cx="760" cy="380" r="13" class="warn"/><rect x="640" y="125" rx="12" width="280" height="190" class="card"/><text x="670" y="165" class="d">9/30</text><text x="670" y="205" class="s">하나은행 / 예가람</text><text x="670" y="235" class="s">ODS 비정상 접근</text><text x="670" y="265" class="s">외부 솔루션 취약점 추정</text><line x1="760" y1="315" x2="760" y2="365" class="line"/></g>
+<g><circle cx="1060" cy="380" r="13" class="info"/><rect x="930" y="430" rx="12" width="300" height="185" class="card"/><text x="960" y="470" class="d">10/1~2</text><text x="960" y="510" class="s">BNK부산은행</text><text x="960" y="540" class="s">외부 웹서버 공격</text><text x="960" y="570" class="s">세션 검증 미흡 확인</text><line x1="1060" y1="395" x2="1060" y2="430" class="line"/></g>
+<g><circle cx="1370" cy="380" r="13" class="warn"/><rect x="1240" y="125" rx="12" width="280" height="190" class="card"/><text x="1270" y="165" class="d">10/2~5</text><text x="1270" y="205" class="s">금융권 전수 점검</text><text x="1270" y="235" class="s">다수 금융사 흔적 확인</text><text x="1270" y="265" class="s">AI 활용 가능성 조사</text><line x1="1370" y1="315" x2="1370" y2="365" class="line"/></g>
+<text x="70" y="700" class="s">주의: 개별 시각·공격 종료 시점은 보도 및 조사 진전에 따라 수정될 수 있으며, 동일 공격자 여부는 확정되지 않았다.</text>
+</svg>
